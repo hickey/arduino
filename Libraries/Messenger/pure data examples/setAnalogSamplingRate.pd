@@ -1,0 +1,37 @@
+#N canvas 1340 54 562 634 10;
+#X obj 96 168 comport;
+#X obj 95 249 list.build;
+#X obj 96 196 sel 13 10;
+#X obj 95 288 convert.int2ascii;
+#X msg 96 72 devicename /dev/ttyUSB0 \, baud 115200;
+#X obj 257 135 convert.ascii2int 13;
+#X text 71 16 This example requires the proper installatio of the PDMTL
+Abstractions that you can find here: http://pdmtl.danslchamp.org;
+#X floatatom 257 102 5 33 1500 0 samplingRate - -;
+#X obj 95 323 unpack f f f f f f;
+#X obj 73 368 vsl 15 128 0 1024 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3336 1;
+#X obj 101 368 vsl 15 128 0 1024 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3361 1;
+#X obj 130 368 vsl 15 128 0 1024 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3386 1;
+#X obj 159 370 vsl 15 128 0 1024 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3398 1;
+#X obj 184 369 vsl 15 128 0 1024 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3411 1;
+#X obj 221 366 vsl 15 128 0 1024 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3411 1;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 2 2 1 1;
+#X connect 3 0 8 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 7 0 5 0;
+#X connect 8 0 9 0;
+#X connect 8 1 10 0;
+#X connect 8 2 11 0;
+#X connect 8 3 12 0;
+#X connect 8 4 13 0;
+#X connect 8 5 14 0;

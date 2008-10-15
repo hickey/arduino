@@ -1,0 +1,31 @@
+#######################################
+# Syntax Coloring Map For Test
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+TextString	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+length		KEYWORD2
+clear		KEYWORD2
+equals		KEYWORD2
+getArray	KEYWORD2
+setArray	KEYWORD2
+getCharAt	KEYWORD2
+setCharAt	KEYWORD2
+trim		KEYWORD2
+trimRight	KEYWORD2
+trimLeft 	KEYWORD2version		KEYWORD2
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
